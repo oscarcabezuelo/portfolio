@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "keep-react/css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: radial-gradient(100% 150% at 50% 40%,#000 30%,#444 100%);
+  
+}
+
+.title {
+  background: linear-gradient(90deg, #c60, #ff4);
+  background-clip: text;
+  color: transparent
+}
