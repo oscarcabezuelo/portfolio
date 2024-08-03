@@ -2,7 +2,7 @@ type BadgeProps = {
     color?: string,
     fullWidth?: boolean,
     className?: string,
-    children: string
+    children: React.ReactNode,
 }
 
 type Colors = {
@@ -10,7 +10,8 @@ type Colors = {
     red: string
     green: string
     yellow: string
-    gray: string
+    gray: string,
+    [key: string]: string
 }
 
 export default function Badge({ color = "yellow", fullWidth = false, className, children }: BadgeProps) {

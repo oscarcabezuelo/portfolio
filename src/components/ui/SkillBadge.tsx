@@ -19,6 +19,7 @@ type Colors = {
     white: string
     amber: string
     "blue-yellow": string
+    [key: string]: string
 }
 
 export default function SkillBadge({ color = "blue", className, icon, children }: SkillBadgeProps) {
@@ -45,6 +46,6 @@ export default function SkillBadge({ color = "blue", className, icon, children }
                 {children}
             </span>
         </>
-        
+
     )
 }
